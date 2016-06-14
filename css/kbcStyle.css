@@ -3,81 +3,134 @@
 }
  */
 div {
-	font-family: 'Julius Sans One', sans-serif;
-	}
+    font-family: 'Julius Sans One', sans-serif;
+}
 
-	font-family: 'Crimson Text', serif;
-	font-family: 'Wire One', sans-serif;
+font-family:
 
+'Crimson Text'
+,
+serif
+
+;
+font-family:
+
+'Wire One'
+,
+sans-serif
+
+;
+
+/*classes stylings*/
+
+.img-circle {
+    height: 200px;
+    width: 200px;
+}
+.spacer {
+    height:200px;
+}
 .divider {
     margin: auto;
     max-width: 300px;
 }
 
 .row {
-	display: block;
-	margin: auto;
+    display: block;
+    margin: auto;
 }
 
 #col1 {
-	background-color: #03A9F4;
-	padding-left: 100px;
-	font-family: 'Crimson Text';
-	font-size: xx-large;
+    background-color: #03A9F4;
+    padding-left: 100px;
+    font-family: 'Crimson Text';
+    font-size: xx-large;
 }
 
 #col2 {
-	margin: auto;
-	padding-top: 10px;
-	position: relative;
-	background-color: #03A9F4;
-	padding-bottom: 15px;
+    margin: auto;
+    padding-top: 10px;
+    position: relative;
+    background-color: #03A9F4;
+    padding-bottom: 15px;
 }
 
 .fa-quote-right {
-	padding-left: 5px;
+    padding-left: 5px;
 }
 
-
 .content-footer {
-	background-color: #2196F3;
-	color: white;
-	text-align: center;
-	margin-top: 0em;
-	padding-top: .1em;
-	margin-left: auto;
-	margin-right: auto;
+    background-color: #2196F3;
+    color: white;
+    text-align: center;
+    margin-top: 0em;
+    padding-top: .1em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .social {
-	color: white;
-	list-style: none;
+    color: white;
+    list-style: none;
 }
 
-!* unvisited link *!
+!
+* unvisited link *!
 a:link {
     color: white;
 }
 
-!* visited link *!
+!
+* visited link *!
 a:visited {
     color: white;
 }
 
-!* mouse over link *!
+!
+* mouse over link *!
 a:hover {
     color: gray;
 }
 
-!* selected link *!
+!
+* selected link *!
 a:active {
     color: white;
 }
 
+.stylish-panel {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.stylish-panel > div > div {
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.stylish-panel > div:hover > div {
+    margin-top: -10px;
+    border: 1px solid rgb(200, 200, 200);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
+    background: rgba(200, 200, 200, 0.1);
+    transition: 0.5s;
+}
+
+.stylish-panel > div:hover img {
+    border-radius: 50%;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
 @media only screen and  (max-width: 500px) {
     .masthead-heading {
-         font-size: 3em;
-    } 
+        font-size: 3em;
+    }
 }
 
 
